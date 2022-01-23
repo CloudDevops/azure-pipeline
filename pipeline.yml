@@ -6,7 +6,7 @@ stages:
       vmImage: ubuntu-latest
     continueOnError: true
     steps:
-    - script: echo "hello to my first Build"
+    - script: echo "hello to my first Build - $(test)"
 - stage: dev_deploy
   jobs:
   - deployment: dev_deploy
